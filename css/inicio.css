@@ -14,18 +14,25 @@ body{
 /* Mobile style */
 
 @media only screen and (max-width: 600px){
-    .linkedin,
-    .instagrma,
-    .github,
-    .port,
+    .page,
     .tabla{
         width: 100%;
     }
-    p, h3{
+    p, h3, h4, footer, label{
+        color: white;
+    }
+    .text, h4, .cv, .page, .tabla, .titulo{
+        margin: auto;
+        padding: 15px;
+    }
+
+    .boton a{
+        text-decoration: none;
+        text-align: center;
         color: white;
     }
    
-
+    
     
 
 }
@@ -64,40 +71,6 @@ body{
 .header{
     width: 400px;
 }
-
-
-
-header nav ul li a{
-    color: white;
-    background-color: black;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    padding: 20px;
-    text-decoration: none;
-    
-    } 
-
-
-    
-.lista li{
-    display: flex;
-    justify-content: center;
-    margin: 20px;
-    padding: 2px;
-    float: left;
-    width: 25%;
-    list-style: none;
-        
-    }
-
-.barra a:hover{
-    background-color: white;
-    color: grey;
-    
-    }
-
 
 .port{
     height: 400px;
@@ -138,8 +111,11 @@ header nav ul li a{
 
 
 .page{
-    display: flex;
-    flex-wrap: wrap;
+    align-items: center;
+    margin: auto;
+    padding: 130px;
+    
+    
 }
 .section{
     width: 100%;
@@ -194,15 +170,15 @@ p{
 }
 .dropdown-menu li{
     color: white;
-    background-color: black;
+    background-color: grey;
     position: relative;
     display: flex;
     justify-content: center;
     text-align: start;
-    width: 100%;
-    padding: 50px;
+    width: 86%;
+    padding: 10px;
     text-decoration: none;
-    margin: 20px;
+    margin: 10px;
   
 }
 .dropdown-menu li:last-of-type{
@@ -224,8 +200,9 @@ p{
 .dropdown:hover .dropdown-menu{
     display: flex;
     flex-direction: column;
-    background-color:black;
+    background-color:grey;
 }
+
 
 .tabla{
     color: white;
@@ -335,3 +312,21 @@ footer{
    height:30px;
    width:100%;    
 }
+
+
+h4{
+    color: white;
+    
+    text-align: center;
+    margin: 15px;
+} 
+
+.text{
+    border: 1px solid grey;
+    margin: 50px;
+    line-height: 30pt;
+    font-size: 15px;
+    text-align: left;
+    justify-content: center;
+}
+
