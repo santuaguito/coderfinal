@@ -31,6 +31,12 @@ body{
         text-align: center;
         color: white;
     }
+    .dropdown-menu{
+        background-color: black;
+    }
+    .dropdown-item{
+        color: #A6A6A6;
+    }
    
     
     
