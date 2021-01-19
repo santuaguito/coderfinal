@@ -15,13 +15,18 @@ body{
 
 @media only screen and (max-width: 600px){
     .page,
-    .tabla{
+    .page2,
+    .tabla,
+    .section,
+    .fr,
+    .cur,
+    .cvf{
         width: 100%;
     }
-    p, h3, h4, footer, label{
+    p, h3, h1, footer, label, .fr{
         color: white;
     }
-    .text, h4, .cv, .page, .tabla, .titulo{
+    h1, .cv, .tabla, .titulo, .fr{
         margin: auto;
         padding: 15px;
     }
@@ -40,6 +45,58 @@ body{
     .page{
         padding: 90px 90px;
     }
+
+    .page2{
+        padding: 15px 36px;
+    }
+    .section{
+        padding: -4px;
+        
+    }
+
+    .salva{
+        width: 300px;
+        height: 300px;
+      }
+
+    .fr{
+        text-align: center;
+        text-decoration: underline;
+        font-size: 20px;
+        margin: auto;
+    }
+
+    .cvf{
+        padding: 15px;
+    }
+    .cvf h2 h3 p{
+        color: #F2F4F4 ;
+        font-size: 25px;   
+        text-align: left;
+        font-family: 'Times New Roman', Times, serif; 
+    }
+    h2{
+        color: #F2F4F4 ;
+        text-decoration: underline;
+        font-size: 25px;   
+        text-align: left;
+        font-family: 'Times New Roman', Times, serif;
+
+    }
+    .button {
+        background-color: #555555;
+        border: none;
+        color: white;
+        padding: 16px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 12px 2px;
+        transition-duration: 0.4s;
+        cursor: pointer;
+    }
+    
    
     
     
@@ -49,16 +106,72 @@ body{
 /* Tablet Style */
 
 @media only screen and (min-width: 600px) and (max-width:960px){
-    .linkedin,
-    .instagrma,
-    .github,
-    .port,
-    .tabla{
+    .page,
+    .page2,
+    .tabla,
+    .section,
+    .fr,
+    .cur,
+    .cvf{
         width: 50% !important;  
     }
-    p, h3{
+    p, h3, h1, footer, label, .fr{
         color: white;
     }
+    h1, .cv, .tabla, .titulo, .fr{
+        margin: auto;
+        padding: 15px;
+    }
+    .port{
+        padding: 20px;
+    }
+    .page{
+        padding: 120px 270px;
+    }
+    .salva{
+        width: 700px;
+        height: 500px;
+      }
+
+    .fr{
+        text-align: center;
+        text-decoration: underline;
+        font-size: 20px;
+        margin: auto;
+        padding: 5px;
+        width: 200px;
+    }
+    .cvf{
+        padding: 15px;
+    }
+    .cvf h2 h3 p{
+        color: #F2F4F4 ;
+        font-size: 25px;   
+        text-align: left;
+        font-family: 'Times New Roman', Times, serif; 
+    }
+    h2{
+        color: #F2F4F4 ;
+        text-decoration: underline;
+        font-size: 25px;   
+        text-align: left;
+        font-family: 'Times New Roman', Times, serif;
+
+    }
+    .button {
+        background-color: #555555;
+        border: none;
+        color: white;
+        padding: 16px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 12px 2px;
+        transition-duration: 0.4s;
+        cursor: pointer;
+    }
+    
 }
 
 /* Desktop Style */
@@ -68,11 +181,13 @@ body{
         width: 960px;
         margin: 0 auto;
     }
-    .linkedin,
-    .instagrma,
-    .github,
-    .port,
-    .tabla{
+    .page,
+    .page2,
+    .tabla,
+    .section,
+    .fr,
+    .cur,
+    .cvf{
         width: 33,3%;
     }
 
@@ -81,17 +196,7 @@ body{
     width: 400px;
 }
 
-.port{
-    height: 400px;
-    width: 400px;
-    margin: 10%;
-    padding: 5%;
-    display: flex;
-    justify-content: baseline;
-    float: left;
-    
 
-}
 .cvimg{
     height: 400px;
     width: 400px;
@@ -122,20 +227,42 @@ body{
 .page{
     align-items: center;
     margin: auto;
-    padding: 130px;
-    
-    
+    padding: 130px;  
 }
-.section{
-    width: 100%;
-    height: 200px;
-    display: flex;
-    justify-content: center;
+.page2{
     align-items: center;
+    margin: auto;
+    padding: auto;  
+}
+
+.alert{  
+    height: 100px;
+    width: 1200px;  
+    background-color: grey;
+    color: white;
+    padding: 30px;
+    margin: auto;
 }
 
 
-h3{
+
+.fr{
+    color: white;
+    text-align: center;
+    text-decoration: underline;
+    padding: 20px;
+}
+
+
+
+.salva{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 900px;
+  }
+
+.titulo h3{
     color: white;
     font-size: 150%;
     text-decoration: underline;
@@ -212,11 +339,13 @@ p{
     background-color:grey;
 }
 
-
-.tabla{
+.section{
     color: white;
-    text-align: center;
-    
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .label{
@@ -261,42 +390,31 @@ textarea{
 select{
     color: white;
 }
-
-button{
-    background-color: gray;
-    text-decoration: none;
+.button {
+    border: none;
     color: white;
-    font-size: 30px;
-    padding: 1%;
-    display: flex;
-    align-items: center;
-    border: 1px solid white;
-    height: 50px;
-    width: 100px;
-    text-align: center; 
-}
-
-
-.env{
-    display: flex;
-    align-items: center;
-    margin: 5%;
-    padding: auto;   
-}
-
-.boton a{
-    text-decoration: none;
+    padding: 16px 32px;
     text-align: center;
-    color: white;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 12px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
 }
-.env{
-    transition-duration: 0.8s;
-}
-
-.boton a:hover{
+.button5 {
     background-color: white;
     color: black;
-}
+    border: 2px solid #555555;
+  }
+  
+.button5:hover {
+    background-color: #555555;
+    color: white;
+  }
+
+
+
 
 .titulo{
     margin: 2px;
@@ -308,6 +426,8 @@ button{
     color: white;
     text-align: center;  
 }
+
+
 
 .pie{
     color: white;
@@ -323,19 +443,44 @@ footer{
 }
 
 
-h4{
-    color: white;
-    
+h1{
+    color: white;    
     text-align: center;
     margin: 15px;
-} 
+    font-family: 'JetBrains Mono', monospace;
+    
+}
 
-.text{
+.cvf{
     border: 1px solid grey;
     margin: 50px;
     line-height: 30pt;
-    font-size: 15px;
     text-align: left;
-    justify-content: center;
+}
+
+.cvf h2{
+    color: #F2F4F4;
+    font-size: 35px;
+    text-decoration: underline;
+    padding: 1%;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    
+}
+
+.cvf h3{
+    color: #F2F4F4;
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: left;
+}
+
+
+.cvf p{
+    color: #F2F4F4 ;
+    font-size: 25px;   
+    text-align: left;
+    font-family: 'Times New Roman', Times, serif; 
+    
 }
 

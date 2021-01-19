@@ -35,11 +35,10 @@ a {
 }
 
 .boton {
-  padding: 2%;
+  padding: 10px;
+  margin: 10px;
   font-size: 300%;
   text-align: center;
-  margin-left: auto;
-  margin-right: auto;
   display: flex;
   justify-content: center;
   display: block;
@@ -62,8 +61,8 @@ a {
   display: block;
 }
 
-.boton, .bye, .boton2 {
-  margin: 150px;
+.boton {
+  margin: 93px;
 }
 
 .rotate {
