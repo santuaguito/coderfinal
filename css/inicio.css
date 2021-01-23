@@ -266,7 +266,7 @@ body{
     color: white;
     font-size: 150%;
     text-decoration: underline;
-    padding: 1%;
+    /* padding: 1%; */
     text-align: center;
 
 }
@@ -274,7 +274,7 @@ body{
 p{
     color: white;
     font-size: 100%;
-    padding: 2%;
+    padding: 5%;
     text-align: center;
 }
 
@@ -483,4 +483,3 @@ h1{
     font-family: 'Times New Roman', Times, serif; 
     
 }
-
