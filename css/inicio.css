@@ -426,6 +426,11 @@ select{
     text-align: center;  
 }
 
+form{
+    margin: 20px;
+    padding: 20px;
+}
+
 
 
 .pie{
@@ -435,7 +440,6 @@ select{
 
 footer{
    position:fixed;
-   left:0px;
    bottom:0px;
    height:40px;
    width:100%;    
@@ -481,4 +485,8 @@ h1{
     text-align: left;
     font-family: 'Times New Roman', Times, serif; 
     
+}
+
+.dat{
+    margin-top: -32px;
 }
