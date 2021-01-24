@@ -436,8 +436,8 @@ select{
 footer{
    position:fixed;
    left:0px;
-   bottom:8px;
-   height:30px;
+   bottom:0px;
+   height:40px;
    width:100%;    
 }
 
@@ -446,7 +446,7 @@ h1{
     color: white;    
     text-align: center;
     margin: 15px;
-    font-family: 'JetBrains Mono', monospace;
+    font-family: 'Times New Roman', Times, serif;
     
 }
 
